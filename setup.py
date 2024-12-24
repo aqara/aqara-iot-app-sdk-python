@@ -1,7 +1,5 @@
 from setuptools import find_packages, setup
 
-from aqara_iot import __version__
-
 
 def requirements():
     with open("requirements.txt") as fileobj:
@@ -38,7 +36,7 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
-    version=__version__,
+    version="1.0.9",
     install_requires=requirements(),
     test_suite="runtests.runtests",
     entry_points={"nose.plugins": []},
