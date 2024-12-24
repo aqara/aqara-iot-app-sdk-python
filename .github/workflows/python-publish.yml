@@ -21,6 +21,8 @@ jobs:
         pip install
         build
         --user
+    - name: Install dependencies
+      run: python3 -m pip install -r requirements.txt --user
     - name: Build a binary wheel and a source tarball
       run: python3 -m build --skip-dependency-check
     - name: Store the distribution packages
